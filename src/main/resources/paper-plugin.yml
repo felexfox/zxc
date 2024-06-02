@@ -1,0 +1,7 @@
+name: zxc
+version: '${project.version}'
+main: org.flx.zxc.Zxc
+api-version: '1.20'
+authors: [flx]
+description: sex
+website: https://discord.gg/modoru-652175216390176787
