@@ -22,7 +22,7 @@ public class CulturesBreakEvent implements Listener {
             for (Player player : Bukkit.getOnlinePlayers()){
                 player.playSound(player.getLocation(), Sound.BLOCK_AMETHYST_BLOCK_BREAK, 1.0F, 1.0F);
             }
-            messageSent = true;
+            messageSent = true;я
         }
         else if (bbe.getBlock().getType().equals(Material.POTATOES) && !messageSent) {
             bbe.getPlayer().sendMessage(mm.deserialize("● <gradient:#FFFFFF:#BCBAB8><b> Modoru</gradient>"+": Вы сломали картофель! Вы так же можете просто его <underlined><bold>собрать</underlined>" + " нажав ПКМ по любой культуре!" + "<click:open_url:https://wiki.modoru.fun/other/crops><bold> Подробнее тут.</click>"));
