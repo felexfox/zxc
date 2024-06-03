@@ -2,19 +2,9 @@
 
 # Хуйня для подсказок о культурах
 
-CulturesBreakEvent:
-  wheat: "●<gradient:#FFFFFF:#BCBAB8><b> Modoru</gradient>: Вы сломали пшеницу! Вы так же можете просто её <underlined><bold>собрать</underlined> нажав ПКМ по любой культуре!<click:open_url:https://wiki.modoru.fun/other/crops><bold> Подробнее тут.</click>"
-  beetroots: "●<gradient:#FFFFFF:#BCBAB8><b> Modoru</gradient>: Вы сломали свеклу! Вы так же можете просто её <underlined><bold>собрать</underlined> нажав ПКМ по любой культуре!<click:open_url:https://wiki.modoru.fun/other/crops><bold> Подробнее тут.</click>"
-  carrots: "●<gradient:#FFFFFF:#BCBAB8><b> Modoru</gradient>: Вы сломали морковь! Вы так же можете просто её <underlined><bold>собрать</underlined> нажав ПКМ по любой культуре!<click:open_url:https://wiki.modoru.fun/other/crops><bold> Подробнее тут.</click>"
-  potatoes: "●<gradient:#FFFFFF:#BCBAB8><b> Modoru</gradient>: Вы сломали картофель! Вы так же можете просто его <underlined><bold>собрать</underlined> нажав ПКМ по любой культуре!<click:open_url:https://wiki.modoru.fun/other/crops><bold> Подробнее тут.</click>"
-
-# Хуйня для подсказок о сНегре
-
-SnowBreakEvent:
-  snow: "●<gradient:#FFFFFF:#BCBAB8><b> Modoru</gradient>: Вы вскопали снег! Но ведь вы могли бы <u><b>слепить</u> снежок, нажав ПКМ!<click:open_url:https://wiki.modoru.fun/other/snow><bold> Подробнее тут.</click>"
-
-# Хуйня для подсказок о жителях
-
-NoVillagersDiscount:
-  VillagersDiscount: "●<gradient:#FFFFFF:#BCBAB8><b> Modoru</gradient>: А вы знали, что скидки от заражения у жителей были отключены, дабы не было такого, что предметы продавались за дёшево?"
-
+hints:
+  format: "<br><color:#c0ff21>[Подсказка]</color>: %hint% <click:run_command:'/hints off'><hover:show_text:'Это подсказка для обучения фишкам нашего сервера. Нажмите, чтобы отключить их.'><dark_gray>[Что это?]</dark_gray></hover></click><br>"
+  list:
+    crops: "Вы так же можете собирать культуры <u><bold>собрать</bold></u> нажав [<key:key.use>] по любой культуре!"
+    snow: "Любите снежки? Нажмите [<key:key.sneak> + <key:key.use>] пустой рукой и слепите пару снежков."
+    discounts: "Жители на нашем сервере не предоставляют скидок за их излечение"
