@@ -8,6 +8,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
+import org.flx.zxc.Zxc;
 
 public class SnowBreakEvent implements Listener {
 
@@ -18,7 +19,7 @@ public class SnowBreakEvent implements Listener {
     @EventHandler
     public void BlockBreakEvent(BlockBreakEvent bbe) {
         if (bbe.getBlock().getType().equals(Material.SNOW) && !messageSent) {
-            bbe.getPlayer().sendMessage(mm.deserialize("Snow.snow"));
+            bbe.getPlayer().sendMessage(mm.deserialize(Zxc.getInstance().getConfig().getString("SnowBreakEvent.snow")));
             for (Player player : Bukkit.getOnlinePlayers()){
                 player.playSound(player.getLocation(), Sound.BLOCK_AMETHYST_BLOCK_BREAK, 1.0F, 1.0F);
             }

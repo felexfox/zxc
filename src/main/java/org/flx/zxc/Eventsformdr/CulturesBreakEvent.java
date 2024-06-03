@@ -8,6 +8,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
+import org.flx.zxc.Zxc;
 
 public class CulturesBreakEvent implements Listener {
 
@@ -18,28 +19,28 @@ public class CulturesBreakEvent implements Listener {
     @EventHandler
     public void BreakBlockEvent(BlockBreakEvent bbe){
         if (bbe.getBlock().getType().equals(Material.WHEAT) && !messageSent) {
-            bbe.getPlayer().sendMessage(mm.deserialize("cultures.wheat"));
+            bbe.getPlayer().sendMessage(mm.deserialize(Zxc.getInstance().getConfig().getString("CulturesBreakEvent.wheat")));
             for (Player player : Bukkit.getOnlinePlayers()){
                 player.playSound(player.getLocation(), Sound.BLOCK_AMETHYST_BLOCK_BREAK, 1.0F, 1.0F);
             }
             messageSent = true;
         }
         else if (bbe.getBlock().getType().equals(Material.POTATOES) && !messageSent) {
-            bbe.getPlayer().sendMessage(mm.deserialize("cultures.potatoes"));
+            bbe.getPlayer().sendMessage(mm.deserialize(Zxc.getInstance().getConfig().getString("CulturesBreakEvent.potatoes")));
             for (Player player : Bukkit.getOnlinePlayers()){
                 player.playSound(player.getLocation(), Sound.BLOCK_AMETHYST_BLOCK_BREAK, 1.0F, 1.0F);
             }
             messageSent = true;
         }
         else if (bbe.getBlock().getType().equals(Material.BEETROOTS) && !messageSent) {
-            bbe.getPlayer().sendMessage(mm.deserialize("cultures.beetroots"));
+            bbe.getPlayer().sendMessage(mm.deserialize(Zxc.getInstance().getConfig().getString("CulturesBreakEvent.beetroots")));
             for (Player player : Bukkit.getOnlinePlayers()){
                 player.playSound(player.getLocation(), Sound.BLOCK_AMETHYST_BLOCK_BREAK, 1.0F, 1.0F);
             }
             messageSent = true;
         }
         else if (bbe.getBlock().getType().equals(Material.CARROTS) && !messageSent) {
-            bbe.getPlayer().sendMessage(mm.deserialize("cultures.carrots"));
+            bbe.getPlayer().sendMessage(mm.deserialize(Zxc.getInstance().getConfig().getString("CulturesBreakEvent.carrots")));
             for (Player player : Bukkit.getOnlinePlayers()){
                 player.playSound(player.getLocation(), Sound.BLOCK_AMETHYST_BLOCK_BREAK, 1.0F, 1.0F);
             }
