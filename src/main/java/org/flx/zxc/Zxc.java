@@ -13,8 +13,12 @@ public final class Zxc extends JavaPlugin {
         return instance;
     }
 
+
+
     @Override
     public void onEnable() {
+
+        saveDefaultConfig();
 
         instance = this;
 

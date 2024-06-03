@@ -19,7 +19,7 @@ public class NoVillagersDiscount implements Listener {
         Player player = pade.getPlayer();
         String advancementName = pade.getAdvancement().getKey().getKey();
         if (advancementName.equalsIgnoreCase("adventure/trade")) {
-            Bukkit.getScheduler().runTaskLater(Zxc.getInstance(), ( ) -> {player.sendMessage(mm.deserialize("●<gradient:#FFFFFF:#BCBAB8><b> Modoru</gradient>"+": А вы знали, что скидки от заражения у жителей были отключены, дабы не было такого, что предметы продавались за дёшево?"));}, 0);
+            Bukkit.getScheduler().runTaskLater(Zxc.getInstance(), ( ) -> {player.sendMessage(mm.deserialize("NoVillagersDiscount.VillagersDiscount"));}, 0);
         }
     }
 

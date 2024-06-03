@@ -1,0 +1,20 @@
+#just_l0fe is high black basketball player with big black cock in his ass
+
+# Хуйня для подсказок о культурах
+
+CulturesBreakEvent:
+  wheat: "●<gradient:#FFFFFF:#BCBAB8><b> Modoru</gradient>: Вы сломали пшеницу! Вы так же можете просто её <underlined><bold>собрать</underlined> нажав ПКМ по любой культуре!<click:open_url:https://wiki.modoru.fun/other/crops><bold> Подробнее тут.</click>"
+  beetroots: "●<gradient:#FFFFFF:#BCBAB8><b> Modoru</gradient>: Вы сломали свеклу! Вы так же можете просто её <underlined><bold>собрать</underlined> нажав ПКМ по любой культуре!<click:open_url:https://wiki.modoru.fun/other/crops><bold> Подробнее тут.</click>"
+  carrots: "●<gradient:#FFFFFF:#BCBAB8><b> Modoru</gradient>: Вы сломали морковь! Вы так же можете просто её <underlined><bold>собрать</underlined> нажав ПКМ по любой культуре!<click:open_url:https://wiki.modoru.fun/other/crops><bold> Подробнее тут.</click>"
+  potatoes: "●<gradient:#FFFFFF:#BCBAB8><b> Modoru</gradient>: Вы сломали картофель! Вы так же можете просто его <underlined><bold>собрать</underlined> нажав ПКМ по любой культуре!<click:open_url:https://wiki.modoru.fun/other/crops><bold> Подробнее тут.</click>"
+
+# Хуйня для подсказок о сНегре
+
+SnowBreakEvent:
+  snow: "●<gradient:#FFFFFF:#BCBAB8><b> Modoru</gradient>: Вы вскопали снег! Но ведь вы могли бы <u><b>слепить</u> снежок, нажав ПКМ!<click:open_url:https://wiki.modoru.fun/other/snow><bold> Подробнее тут.</click>"
+
+# Хуйня для подсказок о жителях
+
+NoVillagersDiscount:
+  VillagersDiscount: "●<gradient:#FFFFFF:#BCBAB8><b> Modoru</gradient>: А вы знали, что скидки от заражения у жителей были отключены, дабы не было такого, что предметы продавались за дёшево?"
+
