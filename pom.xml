@@ -57,12 +57,26 @@
           <url>https://repo.papermc.io/repository/maven-public/</url>
       </repository>
       <repository>
+          <id>sonatype-oss-snapshots1</id>
+          <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
+      </repository>
+      <repository>
           <id>sonatype</id>
           <url>https://oss.sonatype.org/content/groups/public/</url>
       </repository>
   </repositories>
 
   <dependencies>
+      <dependency>
+          <groupId>net.kyori</groupId>
+          <artifactId>adventure-api</artifactId>
+          <version>4.17.0</version>
+      </dependency>
+      <dependency>
+          <groupId>net.kyori</groupId>
+          <artifactId>adventure-text-minimessage</artifactId>
+          <version>4.17.0</version>
+      </dependency>
       <dependency>
           <groupId>io.papermc.paper</groupId>
           <artifactId>paper-api</artifactId>
