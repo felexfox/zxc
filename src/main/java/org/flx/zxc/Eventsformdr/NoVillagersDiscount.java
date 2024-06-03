@@ -21,6 +21,6 @@ public class NoVillagersDiscount implements Listener {
             Bukkit.getScheduler().runTaskLater(Zxc.getInstance(), ( ) -> {player.sendMessage(mm.deserialize("●<gradient:#FFFFFF:#BCBAB8><b> Modoru</gradient>"));}, 0);
 
         }
-    }
+    }я
 
 }
