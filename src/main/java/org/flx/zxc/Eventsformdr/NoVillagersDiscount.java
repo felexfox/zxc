@@ -18,7 +18,7 @@ public class NoVillagersDiscount implements Listener {
         Player player = pade.getPlayer();
         String advancementName = pade.getAdvancement().getKey().getKey();
         if (advancementName.equalsIgnoreCase("adventure/trade")) {
-            Bukkit.getScheduler().runTaskLater(Zxc.getInstance(), ( ) -> {player.sendMessage(mm.deserialize("●<gradient:#FFFFFF:#BCBAB8><b> Modoru</gradient>"));}, 0);finalize();
+            Bukkit.getScheduler().runTaskLater(Zxc.getInstance(), ( ) -> {player.sendMessage(mm.deserialize("●<gradient:#FFFFFF:#BCBAB8><b> Modoru</gradient>"));}, 0);
         }
     }
 

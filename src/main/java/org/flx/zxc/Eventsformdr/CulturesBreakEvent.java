@@ -44,6 +44,6 @@ public class CulturesBreakEvent implements Listener {
                 player.playSound(player.getLocation(), Sound.BLOCK_AMETHYST_BLOCK_BREAK, 1.0F, 1.0F);
             }
             messageSent = true;
-        }finalize();
+        }
     }
 }
