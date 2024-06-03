@@ -24,5 +24,6 @@ public class SnowBreakEvent implements Listener {
             }
             messageSent = true;
         }
-    }
+    }я
+
 }
