@@ -1,19 +1,19 @@
 package org.flx.zxc;
 
 import org.bukkit.Bukkit;
+import org.bukkit.command.PluginCommand;
+import org.flx.zxc.cmd.HintsCommand;
+import org.flx.zxc.listener.HintListener;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.flx.zxc.Eventsformdr.CulturesBreakEvent;
-import org.flx.zxc.Eventsformdr.NoVillagersDiscount;
-import org.flx.zxc.Eventsformdr.SnowBreakEvent;
 
 public final class Zxc extends JavaPlugin {
+
+
     private static Zxc instance;
 
     public static Zxc getInstance() {
         return instance;
     }
-
-
 
     @Override
     public void onEnable() {
@@ -22,15 +22,17 @@ public final class Zxc extends JavaPlugin {
 
         instance = this;
 
-        Bukkit.getConsoleSender().sendMessage("[zxc] Plugin successfully loaded!");
-
-        Bukkit.getPluginManager().registerEvents(new CulturesBreakEvent(), this);
-        Bukkit.getPluginManager().registerEvents(new SnowBreakEvent(), this);
-        Bukkit.getPluginManager().registerEvents(new NoVillagersDiscount(), this);
+        Bukkit.getConsoleSender().sendMessage("Plugin successfully enabled!");
     }
 
     @Override
     public void onDisable() {
-
+        Bukkit.getPluginManager().registerEvents(new HintListener(), this);
+        PluginCommand cmd = getCommand("hints");
+        if (cmd != null) {
+            HintsCommand hints = new HintsCommand();
+            cmd.setExecutor(hints);
+            cmd.setTabCompleter(hints);
+        }
     }
 }
