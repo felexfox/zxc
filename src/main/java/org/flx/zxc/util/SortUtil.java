@@ -20,8 +20,9 @@ public class SortUtil {
     public static @NotNull List<String> search(@NotNull List<String> values, @Nullable String input) {
         List<String> output = new ArrayList<>();
         boolean deep = values.size() > 100;
-        if(input == null)
+        if(input == null) {
             output = List.copyOf(values);
+        }
         else {
             for (String value : values) {
                 boolean similar = true;

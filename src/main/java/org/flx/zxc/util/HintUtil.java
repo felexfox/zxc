@@ -6,7 +6,6 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.flx.zxc.Zxc;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class HintUtil {
@@ -31,7 +30,7 @@ public class HintUtil {
 
         Component msg = TextUtil.wrap(format.replaceAll("%hint%", message));
         player.sendMessage(msg);
-        player.playSound(player, Sound.BLOCK_AMETHYST_BLOCK_BREAK, 1f, 1f);
+        player.playSound(player, Sound.BLOCK_AMETHYST_BLOCK_PLACE, 1f, 1.9f);
     }
 
 }

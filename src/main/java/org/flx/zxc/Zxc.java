@@ -22,12 +22,14 @@ public final class Zxc extends JavaPlugin {
 
         instance = this;
 
+        Bukkit.getPluginManager().registerEvents(new HintListener(), this);
+
         Bukkit.getConsoleSender().sendMessage("Plugin successfully enabled!");
     }
 
     @Override
     public void onDisable() {
-        Bukkit.getPluginManager().registerEvents(new HintListener(), this);
+
         PluginCommand cmd = getCommand("hints");
         if (cmd != null) {
             HintsCommand hints = new HintsCommand();
