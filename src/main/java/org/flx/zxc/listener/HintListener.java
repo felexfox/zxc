@@ -57,11 +57,4 @@ public class HintListener implements Listener {
             default -> {}
         }
     }
-    @EventHandler
-    public void onInventoryClick(InventoryClickEvent ice){
-        Inventory inventory = ice.getView().getTopInventory();
-        if (inventory.getType() == InventoryType.BREWING) {
-
-        }
-    }
 }
