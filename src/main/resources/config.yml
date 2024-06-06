@@ -9,4 +9,6 @@ hints:
     snow: "Любите снежки? Нажмите [<key:key.sneak> + <key:key.use>] пустой рукой и слепите пару снежков."
     discounts: "Жители на нашем сервере не предоставляют скидок за их излечение"
     fletching: "Нажав [<key:key.sneak> + <key:key.use>] вы можете подписать предмет своим ником! <gradient:#756AB6:#AC87C5><click:open_url:https://wiki.modoru.fun/wiki/subscriptions><hover:show_text:'Переход на стрницу вики'>[с Sub/Sub+]</gradient>"
-    brewery: "На нашем сервере есть плагин на бутлегерство....[<key:key.use>] <click:open_url:https://wiki.modoru.fun/custom/brew>сюда, чтобы узнать более.</click>"
+    brewery: "На нашем сервере есть плагин на бутлегерство.... [<key:key.use>] <click:open_url:https://wiki.modoru.fun/custom/brew>сюда, чтобы узнать более.</click>"
+    totems: "Любишь выживать, люби и тотемы пофармить. Шанс урезан, про это можно узнать в нашем <click:open_url:https://wiki.modoru.fun/other/totem_chance>вики</click>!"
+    potions: "Любите зельеварение? Вы же знаете что... Их могут использовать против вас! <click:open_url:https://wiki.modoru.fun/other/invisible-killer><b>Подробнее тут.</click>"
